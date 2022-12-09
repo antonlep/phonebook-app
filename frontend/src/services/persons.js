@@ -21,5 +21,5 @@ const update = (id, newObject) => {
     return request.then(response => response.data)
 }
 
-// eslint-disable-nex-line
+// eslint-disable-next-line
 export default { getAll, create, update, remove }
