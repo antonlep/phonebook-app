@@ -14,15 +14,15 @@ const initialPersons = [
         name: 'Patrick Smith',
         number: '020-002002'
     },
-  ]
+]
 
-  beforeEach(async () => {
+beforeEach(async () => {
     await Person.deleteMany({})
     let personObject = new Person(initialPersons[0])
     await personObject.save()
     personObject = new Person(initialPersons[1])
     await personObject.save()
-  })
+})
 
 test('persons are returned as json', async () => {
   await api
