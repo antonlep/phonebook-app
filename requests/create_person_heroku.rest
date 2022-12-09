@@ -1,0 +1,7 @@
+POST https://thawing-forest-10943.herokuapp.com/api/persons/
+Content-Type: application/json
+
+{
+    "name": "qwer",
+    "number": "123123"
+}
