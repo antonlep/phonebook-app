@@ -19,8 +19,6 @@ jobs:
           node-version: '16'
       - name: npm install
         run: npm install
-      - name: npm install frontend
-        run: npm run postinstall
       - name: lint
         run: npm run lint
       - name: test
