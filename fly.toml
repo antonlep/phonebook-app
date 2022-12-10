@@ -13,7 +13,7 @@ processes = []
   auto_rollback = true
 
 [deploy]
-  release_command = "npm install && npm run postinstall"
+  release_command = "npm run postinstall"
 
 [[services]]
   http_checks = []
