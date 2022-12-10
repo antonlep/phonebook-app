@@ -7,7 +7,7 @@ RUN curl https://get.volta.sh | bash
 ENV VOLTA_HOME /root/.volta
 ENV PATH /root/.volta/bin:$PATH
 RUN volta install node@${NODE_VERSION}
-ENV MONGODB_URI=${{ secrets.MONGODB_URI }}
+ENV MONGODB_URI=$MONGODB_URI
 
 #######################################################################
 
