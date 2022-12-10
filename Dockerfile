@@ -1,8 +1,6 @@
 FROM debian:bullseye as builder
 
 ARG NODE_VERSION=14.20.1
-ARG MONGODB_URI
-ENV MONGODB_URI=${MONGODB_URI}
 
 RUN apt-get update; apt install -y curl
 RUN curl https://get.volta.sh | bash
