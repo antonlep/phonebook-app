@@ -12,8 +12,6 @@ RUN --mount=type=secret,id=MONGODB_URI \
 
 ARG MONGODB_URI
 ENV MONGODB_URI=${MONGODB_URI}
-COPY rel rel
-RUN mix release
 
 #######################################################################
 
