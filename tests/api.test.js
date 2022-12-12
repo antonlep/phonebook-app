@@ -7,5 +7,3 @@ test('two plus two is four', () => {
     data['two'] = 2;
     expect(data).toEqual({one: 1, two: 2});
   });
-
-
