@@ -14,4 +14,4 @@ jobs:
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: echo "MONGODB_URI $MONGODB_URI"
-        - run: flyctl deploy --build-secret MONGODB_URI=$MONGODB_URI --remote-only 
+        - run: flyctl deploy --build-arg MONGODB_URI=${MONGODB_URI} --remote-only 
