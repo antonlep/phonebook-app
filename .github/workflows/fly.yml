@@ -13,7 +13,6 @@ jobs:
       steps:
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: echo "MONGODB_URI $MONGODB_URI"
-        - run: flyctl secrets set MONGODB_URI=$MONGODB_URI
+        - run: flyctl secrets set MONGODB_URI=${MONGODB_URI}
         - run: flyctl deploy --remote-only 
         - run: flyctl secrets list
