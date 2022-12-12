@@ -15,4 +15,3 @@ jobs:
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: flyctl secrets set MONGODB_URI=${MONGODB_URI}
         - run: flyctl deploy --remote-only 
-        - run: flyctl secrets list
