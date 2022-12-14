@@ -3,10 +3,13 @@
 app = "nameless-bush-9439"
 kill_signal = "SIGINT"
 kill_timeout = 5
-
+processes = []
 
 [env]
   PORT = "3001"
+
+[processes]
+  app = "npm run start"
 
 [experimental]
   allowed_public_ports = []
